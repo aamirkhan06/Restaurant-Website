@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* background-color: black;
+    color:white; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.Restaurant-name {
+  font-size: 30px;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  /* padding: 20px; */
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.social-icons > img {
+  width: 70px;
+}
+
+.card {
+  color: white;
+  width: 100%;
+  height: 700px;
+  background: url(https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 70px;
+}
+
+.card > .card-head {
+  width: 50%;
+  font-family: Quattrocento;
+  font-size: 100px;
+}
+.card > .line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  border-bottom: 10px solid #f24c4c;
+}
+.card > .card-content {
+  width: 50%;
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
+/* common styles for heading */
+#about-us,
+#menu {
+  padding: 70px 100px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.line-head {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 50%;
+  border-bottom: 10px solid #b62828;
+}
+h2 {
+  font-family: Quattrocento;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+#about-us > .about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#about-us > .about-content > p {
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+
+#menu > p {
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.menu-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding-top: 100px;
+}
+.menu-cards > .card-item {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 48%;
+}
+
+.card-item{
+    padding-top: 30px;
+    border-radius:10px;
+    overflow: hidden;
+}
+.menu-cards > .card-item > img {
+  width: 50%;
+}
+h3 {
+  font-family: Ruda;
+  font-size: 28px;
+  font-weight: 400;
+  color: #f2c94c;
+  margin-bottom: 20px;
+}
+.menu-cards > .card-item > p {
+  text-align: left;
+}
+.menu-content {
+  padding-inline: 50px 30px;
+}
+.menu-content > p {
+  font-family: Ruda;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
