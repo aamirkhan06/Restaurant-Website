@@ -76,7 +76,9 @@ nav > ul > li > a {
 
 /* common styles for heading */
 #about-us,
-#menu {
+#menu,
+#gallary,
+#find-us{
   padding: 70px 100px;
   text-align: center;
   background-color: black;
@@ -133,10 +135,10 @@ h2 {
   width: 48%;
 }
 
-.card-item{
-    padding-top: 30px;
-    border-radius:10px;
-    overflow: hidden;
+.card-item {
+  padding-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .menu-cards > .card-item > img {
   width: 50%;
@@ -161,4 +163,117 @@ h3 {
   line-height: 30px;
   letter-spacing: 0.09em;
   text-align: left;
+}
+
+.gallary-grid {
+  display: grid;
+  width: 100%;
+  height: 700px;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "a a a b c"
+    "a a a b c"
+    "a a a d c"
+    "a a a d f"
+    "a a a e f"
+    "a a a e f";
+}
+.img1 {
+  background-color: #b62828;
+  margin: 5px;
+  grid-area: a;
+}
+.img2 {
+  background-color: #b62828;
+  margin: 5px;
+  grid-area: b;
+}
+.img3 {
+  margin: 5px;
+  grid-area: c;
+}
+.img4 {
+  background-color: #b62828;
+  margin: 5px;
+  grid-area: d;
+}
+.img5 {
+  background-color: #b62828;
+  margin: 5px;
+  grid-area: e;
+}
+.img6 {
+  margin: 5px;
+  grid-area: f;
+}
+
+.find-card {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  height: 410px;
+  position: relative;
+}
+.find-content,.find-map
+{
+  width:50%;
+  padding: 20px;
+}
+.find-card > .find-content > p {
+  font-family: Ruda;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.09em;
+  text-align: left;
+}
+.find-map > img {
+  width: 100%;
+}
+
+.icon
+{
+  width:40px;
+}
+
+.identity
+{
+  position: absolute;
+  bottom: 10px;
+  left:1px;
+}
+.private-details
+{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: Ruda;
+font-size: 18px;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.09em;
+text-align: left;
+
+}
+.private-details>p{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+footer{
+  padding: 70px 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts>.contact-details
+{
+  display: flex;
+  gap:40px;
+  margin-bottom: 30px;
+  align-items: center;
 }
